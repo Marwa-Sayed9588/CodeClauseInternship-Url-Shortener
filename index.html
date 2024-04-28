@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat+Subrayada:wght@400;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="logo.png" class="logo">
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="nav-bg"></div>
+
+   
+    
+    <p class="title">Welcome to our URL Shortener!</p>
+    <div class="paragraph">
+    <p class="paragraph1"> This tool allows you to shorten long URLs into shorter, more manageable links. Simply enter your URL in the input field below and click on the "Shorten URL" button to get a shortened link. You can also generate a QR code for your shortened URL by clicking on the "Generate QR Code" button.</p>
+    </div>
+    
+    <div class="container">
+        <label for="url">URL Shortener </label>
+        
+        <img src="scissors1.png" class="scissors1"></img><p><strong>Try It Now!</strong></p>
+        <input type="text" id="url" placeholder="Enter Your URL"><br>
+        <button onclick="shortURL()" id="shortBtn" >Shorten URL</button>
+        <div id="result"></div>
+      </div>
+
+      <div class="container2">
+        <h2>Do you want to generate QR-Code of your link? </h2>
+        <h2>Click Here</h2>
+        <div class="qr-container">
+            <img src="QR_Code.png" class="QR-Code" alt="QR-Code">      
+            <button type="button" class="bbttnn"><a href="QR-Code Generation\qr.html">QR-Code</a>
+            </button>  
+            </div>         
+        </div>
+        <style>
+           
+
+
+           .paragraph1 {
+    font-size: 30px;
+     
+    width: 80%; 
+    text-align: center; 
+    margin-top: 20px; 
+    font-family: 'akaya kanadaka';
+    justify-content: justify;
+    margin: 0 auto;
+  }
+        </style>
+    
+
+<script src="Script.js"></script>
+</body>
+</html>
+
