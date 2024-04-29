@@ -53,7 +53,7 @@ body{
 
 .nav-bg {
   position: absolute;
-  top: 79px;
+  top: 179px;
   left: 0;
   width: 100%;
   height: 295px;
@@ -66,21 +66,34 @@ body{
 
 .nav-bg.active {
   display: block;
-}
+} 
 
 
 .image
 {
-    margin-top: 12%;
-
-      margin-right: 200px; /* Adjust the margin-right value as needed */
+    
+      margin-right: 200px; 
 }
     
 .box
  {
-    width: 300px;
-    height: 600px;
-    margin-top: 100px; /* Adjust the margin-top value as needed */
+  
+    margin-top: 30%; 
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+    padding: 5%; 
+    width: 90%; 
+    height: 70%;
+    max-width: 700px; 
+    margin-top: 30%; 
+    margin-left: 5%; 
+    border-radius: 14px;
+    animation: shineGlow 1300s infinite alternate;
+
+
+}
+
+.qr-header{
+  margin-top:60px;
 }
 }
 
@@ -88,12 +101,12 @@ body{
 
 .image {
     float: right;
-    width: 25%; /* Set a percentage width for responsiveness */
+    width: 25%; 
     max-width: 400px; 
     height: auto;
     margin-top: 30px;
     margin-right: 5%; 
-    animation: shineGlow 0.4s infinite alternate;
+    animation: shineGlow 0.3s infinite alternate;
 }
 
 .box {
@@ -102,7 +115,7 @@ body{
     width: 90%; 
     max-width: 700px; 
     margin-top: 10%; 
-    margin-left: 5%; /* Adjust the margin-left value as needed */
+    margin-left: 5%; 
     border-radius: 14px;
     animation: shineGlow 1300s infinite alternate;
 }
